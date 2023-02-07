@@ -1,0 +1,27 @@
+  
+<div class="container">
+    <form class="mt-4" [formGroup]="calc" (submit)="calcButton()">
+
+    <div class="input mt-3">
+      <label for="radius" class="form-label">Sugár: </label>
+      <input type="text" class="form-control"
+      placeholder="Sugár" formControlName="radius">
+    </div>
+  
+    <div class="input mt-3">
+      <label for="lenght" class="form-label">Sugár hossza: </label>
+      <input type="text" class="form-control"
+      placeholder="Sugár hossza" formControlName="radius">
+    </div>
+  
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-info">Számít</button>
+    </div>
+  
+    <div class="output mt-3" *ngIf="show">
+    <label for="lenght" class="form-label">Felszín: </label>
+      <input type="text" class="result form-control" formControlName="result" readonly>
+     </div>
+     
+    </form>
+</div>

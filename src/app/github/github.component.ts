@@ -18,6 +18,6 @@ export class GithubComponent implements OnInit{
   constructor () {}
 
   ngOnInit(): void { }
-  github = 'http://github.com/Pali002';
+  github = 'https://github.com/Pali002';
 
 }
